@@ -28,3 +28,12 @@ Initialize the Oh My Zsh submodule:
 ```bash
 git submodule update --init --recursive
 ```
+
+## 📦 External Dependencies
+Some plugins require system-level packages:
+- `fzf`: Install via `brew install fzf` or `sudo dnf install fzf`.
+
+## 🔄 Updating Plugins
+To update all plugins and Oh My Zsh to their latest versions:
+```bash
+git submodule update --remote --merge
