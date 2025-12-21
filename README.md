@@ -1,4 +1,4 @@
-# Zsh
+# zsh
 
 This repository houses my Zsh configuration, organized according to XDG standards to keep the home directory clean. It uses **Oh My Zsh** for plugin management and theme support.
 
