@@ -15,7 +15,16 @@ To set up this configuration on a new machine:
 
 ### 1. Redirect Zsh (Critical Step)
 Zsh looks in `~` by default. You must tell it to look in `~/.config/zsh` by creating a `.zshenv` file in your **home** directory:
-
 ```bash
 echo 'export ZDOTDIR=$HOME/.config/zsh' > ~/.zshenv
+```
+### 2. Clone the Repository
+Clone this repository into your `~/.config/zsh` directory:
+```bash
+git clone https://github.com/jacobwiseberg/zsh ~/.config/zsh
+```
+### 3. Initialize Oh My Zsh
+Initialize the Oh My Zsh submodule:
+```bash
+git submodule update --init --recursive
 ```
