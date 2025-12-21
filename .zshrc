@@ -20,6 +20,7 @@ ZSH_CUSTOM=$ZDOTDIR/custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git 
+  tmux 
   fzf 
   zsh-autosuggestions 
   zsh-syntax-highlighting
