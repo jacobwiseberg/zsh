@@ -40,6 +40,7 @@ alias zshconfig="nvim $ZDOTDIR/.zshrc"
 alias vim='nvim'
 alias lzd='lazydocker'
 alias lg='lazygit'
+alias mosh-clean="pgrep -u "$USER" mosh-server | grep -v $(ps -o ppid --no-headers $$) | xargs kill"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
