@@ -43,8 +43,3 @@ alias lg='lazygit'
 alias mosh-clean="pgrep -u "$USER" mosh-server | grep -v $(ps -o ppid --no-headers $$) | xargs kill"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# Keeps WSL from suspending when the terminal is closed or PC is locked
-if ! pgrep -f "sleep infinity" > /dev/null; then
-    nohup sleep infinity > /dev/null 2>&1 &!
-fi
